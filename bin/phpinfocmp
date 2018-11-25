@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+declare(strict_types=1);
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Ngmy\PhpinfoComparator\Application\Runner;
+use Ngmy\PhpinfoComparator\Infrastructure\{
+    ConsoleCommandLineCommandReadWriter,
+    ConsoleCommandLineParserFactory
+};
+
+$consoleCommandLineParser = ConsoleCommandLineParserFactory::create();
+$commandReadWriter = new ConsoleCommandLineCommandReadWriter($consoleCommandLineParser);
+$runner = new Runner($commandReadWriter);
+$exitCode = $runner->runPhpinfocmp();
+
+exit($exitCode);
