@@ -1,0 +1,50 @@
+{
+    "name": "ngmy/phpinfocmp",
+    "description": "PhpinfoComparator is compare two phpinfo() files.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "phpinfo",
+        "comparator",
+        "comparison",
+        "diff"
+    ],
+    "authors": [
+        {
+            "name": "Yuta Nagamiya",
+            "email": "y.nagamiya@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "aura/di": "^3.0",
+        "cogpowered/finediff": "^0.3",
+        "pear/console_commandline": "^1.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "php-coveralls/php-coveralls": "^2.1",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ngmy\\PhpinfoComparator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ngmy\\PhpinfoComparator\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "7.1.0"
+        }
+    },
+    "bin": [
+        "bin/phpinfocmp"
+    ]
+}
