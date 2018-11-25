@@ -11,7 +11,7 @@ class ConsoleCommandLineParserFactory
     {
         $parser = new Console_CommandLine([
           'description' => 'phpinfo comparator',
-          'version'     => '0.1.0',
+          'version'     => '0.2.0',
         ]);
 
         $parser->addOption('fetch_mode1', [
