@@ -1,5 +1,8 @@
 # PhpinfoComparator
 
+[![Build Status](https://travis-ci.org/ngmy/phpinfocmp.svg?branch=master)](https://travis-ci.org/ngmy/phpinfocmp)
+[![Coverage Status](https://coveralls.io/repos/github/ngmy/phpinfocmp/badge.svg?branch=master)](https://coveralls.io/github/ngmy/phpinfocmp?branch=master)
+
 PhpinfoComparator is compare two `phpinfo()` files.
 
 ## Requirements
